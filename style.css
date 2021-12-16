@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+footer {
+    border-top: 3px solid black;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#welcome {
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.left-presentation {
+    width: 50%;
+    display: inline-block;
+}
+
+.left-presentation h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0;
+}
+
+.left-presentation span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.right-presentation {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.right-presentation img {
+    width: 80%;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.title-section h2 {
+    margin: 30px 0 0 0;
+    font-size: 2.2em;
+}
+
+.title-section p {
+    padding: 15px;
+    margin: 0;
+}
+
+.element {
+    border-radius: 15px;
+    position: relative;
+}
+
+.element:hover {
+    opacity: 0.7;
+}
+
+.element:nth-of-type(1) {
+    background: url(images/jump-start.png) center;
+    background-size: cover;
+}
+
+.element:nth-of-type(2) {
+    background: url(images/rodeo-pump.jpg) center;
+    background-size: cover;
+}
+
+.element:nth-of-type(3) {
+    background: url(images/pac-man.jpg) center;
+    background-size: cover;
+}
+
+.element:nth-of-type(4) {
+    background: url(images/mega-pop.jpg) center;
+    background-size: cover;
+}
+
+.element h3 {
+    color: white;
+    padding: 50px 25px;
+    font-size: 2em;
+    text-shadow: 2px 2px 40px black;
+}
+
+.element h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.title-section button {
+    background: black;
+    padding: 15px;
+}
+
+.title-section button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* PAGE JUMP START */
+
+
+#welcome-jumpStart {
+    width: 100%;
+    height: 100%;
+    background: url('images/points.png'), center url('images/jump-start.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-jumpStart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#presentation-jumpStart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.left-presentation-jumpStart {
+    width: 50%;
+    display: inline-block;
+}
+
+.left-presentation-jumpStart h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0;
+}
+
+.left-presentation-jumpStart span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.right-presentation-jumpStart {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+@media all and (max-width:1130px) {
+
+    #grille {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left-presentation-jumpStart {
+        width: 70%;
+    }
+
+    .right-presentation-jumpStart {
+        width: 30%;
+    }
+
+}
+
+@media all and (max-width:730px) {
+
+    #grille {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #welcome-jumpStart {
+        background-position: left;
+    }
+
+    .left-presentation {
+        width: 100%;
+    }
+
+    .right-presentation img {
+        display: none;
+    }
+
+    .right-presentation {
+        width: 0;
+    }
+
+    .left-presentation-jumpStart {
+        width: 100%;
+    }
+
+    .right-presentation-jumpStart {
+        width: 0;
+    }
+}
